@@ -1,0 +1,13 @@
+mkdir sandbox
+mkdir sandbox/css
+mkdir sandbox/images
+mkdir sandbox/script
+touch sandbox/index.html
+cp /var/www/images/logo1.png /home/bb/sandbox/images
+cp /var/www/images/logo2.png /home/bb/sandbox/images
+chmod 744 -R /sandbox
+find /home/bb/sandbox -type d -print | > /home/bb/sandbox/web-listing
+find /var/www/images -name "*.png" -print | > /home/bb/sandbox/avail-images
+
+
+https://www.youtube.com/watch?v=TDoJArDmDnw
